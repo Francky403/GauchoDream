@@ -83,9 +83,28 @@ _(A definir. Sugerencias iniciales:)_
 
 ## 📝 Estado / próximos pasos
 
+### 📍 Dónde quedamos (última sesión: 2026-09-23)
+Terminado el andamiaje completo: proyecto Godot creado, respaldado en GitHub, con
+una base jugable de ejemplo (gaucho que camina y salta). **El usuario NO va a seguir
+construyendo todavía** — primero quiere APRENDER Godot de a poco, con el tutorial
+oficial, entendiendo cada concepto. La base ya hecha queda como referencia opcional.
+
+**Fase actual: aprendizaje (no desarrollo).** Ir despacio, sin adelantarse ni
+generar código de más. Acompañar explicando conceptos cuando el usuario pregunte.
+
+**Recursos de aprendizaje acordados:**
+- Step by step: https://docs.godotengine.org/en/stable/getting_started/step_by_step/
+- Your first 2D game (Dodge the Creeps): https://docs.godotengine.org/en/stable/getting_started/first_2d_game/
+- Conceptos base a entender: nodo, escena, script, señales (signals).
+
+**Próximo paso sugerido:** cuando el usuario retome, empezar por el concepto de
+nodos y escenas con un ejemplo simple, a su ritmo.
+
+### Checklist del proyecto
 - [x] Proyecto Godot creado y subido a GitHub (commit inicial).
 - [x] Definir concepto y género: plataformas 2D del gaucho.
-- [x] Primera escena jugable: gaucho con movimiento (caminar + saltar) sobre un piso.
+- [x] Base jugable de ejemplo: gaucho con movimiento (caminar + saltar) sobre un piso.
+- [ ] **Aprender Godot** (fase actual): nodos, escenas, scripts, señales.
 - [ ] Conseguir/dibujar el sprite del gaucho (reemplazar el placeholder icon.svg).
 - [ ] Agregar más plataformas y diseñar el primer nivel.
 - [ ] Enemigos y/o coleccionables.
