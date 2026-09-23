@@ -21,13 +21,16 @@ Juego personal desarrollado en **Godot 4.6 (Mono / soporta C#)**.
 
 ## 🎮 Sobre el juego
 
-_(A completar a medida que lo definamos)_
-
 - **Idea / concepto:** un juego con temática de gaucho.
-- **Género:** _(pendiente: plataformas / aventura / RPG / etc.)_
-- **Perspectiva:** _(pendiente: 2D / 3D)_
+- **Género:** plataformas **2D**.
+- **Perspectiva:** 2D (vista lateral).
 - **Historia:** _(pendiente)_
-- **Mecánicas principales:** _(pendiente)_
+- **Mecánicas principales:** caminar y saltar (base ya implementada). _(Pendiente: enemigos, coleccionables, vidas, niveles.)_
+
+### Controles actuales (placeholder)
+- **Izquierda / Derecha:** flechas ← →  (acciones `ui_left` / `ui_right`)
+- **Saltar:** Barra espaciadora o Enter (acción `ui_accept`)
+- _Más adelante se pueden agregar WASD como acciones personalizadas en Project Settings → Input Map._
 
 ---
 
@@ -35,15 +38,21 @@ _(A completar a medida que lo definamos)_
 
 ```
 GauchoDream/
-├── project.godot        # archivo principal del proyecto Godot
-├── icon.svg             # ícono del juego
+├── project.godot        # archivo principal (main_scene = scenes/main.tscn)
+├── icon.svg             # ícono / placeholder del gaucho
+├── scenes/
+│   ├── main.tscn        # escena principal: jugador + piso de prueba
+│   └── player.tscn      # el gaucho (CharacterBody2D + Sprite + colisión)
+├── scripts/
+│   └── player.gd        # movimiento: caminar + saltar + gravedad
+├── assets/
+│   ├── sprites/         # (vacío) acá van las imágenes del gaucho, enemigos, etc.
+│   └── audio/           # (vacío) música y efectos de sonido
 ├── .gitignore           # ignora .godot/ (caché) y /android/
 ├── .gitattributes
 ├── .editorconfig
 └── CLAUDE.md            # este archivo
 ```
-
-_(La estructura de escenas, scripts y assets se irá agregando.)_
 
 ---
 
@@ -75,5 +84,9 @@ _(A definir. Sugerencias iniciales:)_
 ## 📝 Estado / próximos pasos
 
 - [x] Proyecto Godot creado y subido a GitHub (commit inicial).
-- [ ] Definir concepto y género del juego.
-- [ ] Crear la primera escena / personaje.
+- [x] Definir concepto y género: plataformas 2D del gaucho.
+- [x] Primera escena jugable: gaucho con movimiento (caminar + saltar) sobre un piso.
+- [ ] Conseguir/dibujar el sprite del gaucho (reemplazar el placeholder icon.svg).
+- [ ] Agregar más plataformas y diseñar el primer nivel.
+- [ ] Enemigos y/o coleccionables.
+- [ ] Animaciones (idle, caminar, saltar).
